@@ -18,7 +18,6 @@ for i in range(1,10):
 
 
 links   =  browser.find_elements_by_tag_name('a')
-ml      = browser.find_elements_by_xpath('//*[@data-ct]')
 
 for l in links:
     if re.search("/startup/", str(l.get_attribute("href"))):
